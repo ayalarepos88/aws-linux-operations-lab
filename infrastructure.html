@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Infrastructure Architecture</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="infrastructure.html">Infrastructure</a>
+    <a href="screenshots.html">Screenshots</a>
+    <a href="resume.html">My Journey</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h1>Infrastructure Architecture</h1>
+
+    <p>
+        This environment is hosted on AWS EC2 and built around
+        Red Hat Enterprise Linux 10. The platform combines
+        web services, monitoring tools, containerized workloads,
+        and source control management.
+    </p>
+
+    <h2>Current Architecture</h2>
+
+    <div class="architecture-box">
+
+<pre>
+Internet
+    │
+AWS EC2
+    │
+Red Hat Enterprise Linux 10
+    │
+Nginx Web Server
+    │
+├── Grafana
+├── Prometheus
+├── Node Exporter
+└── Uptime Kuma
+</pre>
+
+    </div>
+
+    <h2>Components</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>AWS EC2</h3>
+            <p>
+                Virtual machine hosting the project environment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Red Hat Enterprise Linux</h3>
+            <p>
+                Operating system used for administration,
+                package management and services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Nginx</h3>
+            <p>
+                Web server used to host portfolio content.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Podman</h3>
+            <p>
+                Container engine used to run monitoring services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Grafana</h3>
+            <p>
+                Dashboard platform for infrastructure metrics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Prometheus</h3>
+            <p>
+                Metrics collection and time-series database.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
